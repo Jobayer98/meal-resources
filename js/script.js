@@ -7,9 +7,9 @@ const loadData = (st) => {
 };
 
 const displayMeals = (meals) => {
+  console.log(meals);
   const card_container = document.getElementById("card_container");
   meals.forEach((meal) => {
-    console.log(meal);
     const card = document.createElement("div");
     card.classList.add(
       "card",
@@ -21,7 +21,7 @@ const displayMeals = (meals) => {
       "h-[260px]"
     );
     card.innerHTML = `
-            <figure>
+            <figure class="w-[120%]">
               <img
                 class="h-full rounded-lg"
                 src="${meal.strMealThumb}"
@@ -33,8 +33,7 @@ const displayMeals = (meals) => {
                ${meal.strMeal}
               </h2>
               <p class="text-[#706F6F]">
-                Click the button to watch on Jetflix app.
-                Click the button to watch on Jetflix app.
+                ${meal.strInstructions.slice(0, 100) + "..."}
               </p>
               <div class="card-actions justify-end">
                 <a class="text-[#FFC107] text-[18px] underline" href="#"
