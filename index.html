@@ -27,31 +27,66 @@
     </header>
     <main>
       <!-- hero section -->
-      <section></section>
       <section>
-        <div class="mt-4 flex justify-center items-center gap-4">
-          <input
-            id="search_meal"
-            type="text"
-            placeholder="Type here"
-            class="input input-bordered input-info w-full max-w-xs"
-          />
-          <button
-            onclick="searchMeal()"
-            class="px-12 py-3 bg-[#3ABFF8] rounded-md text-slate-100"
+        <div
+          class="bg-[url('./images/banner_1.png')] h-[490px] bg-cover bg-center py-6 lg:py-24 text-slate-50 flex flex-col justify-center items-center"
+        >
+          <h1
+            class="w-[95%] text-[42px] lg:text-[65px] font-bold md:w-[450px] lg:w-[650px] leading-[56px] lg:leading-[70px] text-center"
           >
-            Search
-          </button>
+            Taste Our Delicious Best Foods
+          </h1>
+          <p
+            class="w-[90%] lg:w-[690px] text-md lg:text-xl leading-[28px] text-center my-4 lg:my-6"
+          >
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humou.
+          </p>
+          <div
+            class="w-[90%] lg:w-[650px] flex justify-center items-center text-gray-700"
+          >
+            <input
+              class="w-[80%] rounded px-6 py-3"
+              type="search"
+              placeholder="Search any food"
+              name=""
+              id=""
+            />
+            <button
+              class="btn btn-warning px-6 font-bold ml-[-18px] normal-case"
+            >
+              Search
+            </button>
+          </div>
         </div>
-        <p class="text-center text-xl mt-8" id="loading"></p>
-        <div id="card-container" class="grid grid-cols-3 gap-8 m-8"></div>
-        <div id="showAll" class="flex justify-center items-center mb-6">
-          <button
-            class="py-2 px-6 bg-[#3ABFF8] rounded-md text-slate-100 font-bold"
-            onclick="seeAllMeal()"
-          >
-            See All
-          </button>
+      </section>
+      <section class="mt-24 px-8 lg:px-24">
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-4">
+          <div class="card card-side bg-base-100 shadow-xl">
+            <figure>
+              <img src="https://picsum.photos/200" alt="Movie" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Watch</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-side bg-base-100 shadow-xl">
+            <figure>
+              <img src="https://picsum.photos/200" alt="Movie" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Watch</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
