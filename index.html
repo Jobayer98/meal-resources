@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MealDB</title>
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/googleTranslate.js"></script>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main>
+      <!-- hero section -->
+      <section></section>
+      <section>
+        <div class="mt-4 flex justify-center items-center gap-4">
+          <input
+            id="search_meal"
+            type="text"
+            placeholder="Type here"
+            class="input input-bordered input-info w-full max-w-xs"
+          />
+          <button
+            onclick="searchMeal()"
+            class="px-12 py-3 bg-[#3ABFF8] rounded-md text-slate-100"
+          >
+            Search
+          </button>
+        </div>
+        <p class="text-center text-xl mt-8" id="loading"></p>
+        <div id="card-container" class="grid grid-cols-3 gap-8 m-8"></div>
+        <div id="showAll" class="flex justify-center items-center mb-6">
+          <button
+            class="py-2 px-6 bg-[#3ABFF8] rounded-md text-slate-100 font-bold"
+            onclick="seeAllMeal()"
+          >
+            See All
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
