@@ -18,12 +18,13 @@ const displayMeals = (meals) => {
       "shadow-inner",
       "border-[1px]",
       "border-slate-200",
-      "h-[260px]"
+      "h-[260px]",
+      "rounded-md"
     );
     card.innerHTML = `
             <figure class="w-[120%]">
               <img
-                class="h-full rounded-lg"
+                class="h-full rounded-md"
                 src="${meal.strMealThumb}"
                 alt="Movie"
               />
