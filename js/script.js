@@ -36,8 +36,8 @@ const displayMeals = (meals) => {
               <p class="text-[#706F6F]">
                 ${meal.strInstructions.slice(0, 100) + "..."}
               </p>
-              <div class="card-actions justify-end">
-                <a class="text-[#FFC107] text-[18px] underline" href="#"
+              <div class="card-actions justify-start">
+                <a class="text-[#FFC107] text-[18px] underline font-bold" href="#"
                   >View Details</a
                 >
               </div>

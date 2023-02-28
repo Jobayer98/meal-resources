@@ -34,8 +34,8 @@
     <header>
       <div class="px-8 lg:px-24 py-8 flex justify-between items-center">
         <h1 class="text-xl font-bold">Tasty HUT</h1>
-        <button class="btn btn-warning px-8 nomal-case font-bold">
-          Sign UP
+        <button class="btn btn-warning px-8 normal-case text-xl font-bold">
+          Sign Up
         </button>
       </div>
     </header>
@@ -76,13 +76,72 @@
           </div>
         </div>
       </section>
+
+      <!-- Cards section -->
       <section class="mt-24 px-8 lg:px-24 py-24">
-        <h1 class="text-4xl font-bold text-center mb-8">Your Favorite Food</h1>
+        <h1 class="text-4xl font-bold text-center mb-12">Your Favorite Food</h1>
         <div
           id="card_container"
           class="grid md:grid-cols-2 lg:grid-cols-2 gap-8"
         ></div>
+        <div class="flex justify-center items-center mt-16">
+          <button class="btn btn-warning px-6 normal-case text-xl font-bold">
+            Show All
+          </button>
+        </div>
       </section>
     </main>
+    <!-- footer -->
+    <footer class="px-8 py-8 lg:py-16 lg:px-24 bg-[#fffcf3]">
+      <div class="grid grid-cols-5">
+        <div>
+          <h1 class="text-2xl font-bold">Section</h1>
+          <ul class="mt-6">
+            <li class="text-md font-semibold my-2">Home</li>
+            <li class="text-md font-semibold my-2">Features</li>
+            <li class="text-md font-semibold my-2">Pricing</li>
+            <li class="text-md font-semibold my-2">FAQs</li>
+            <li class="text-md font-semibold my-2">About</li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-2xl font-bold">Section</h1>
+          <ul class="mt-6">
+            <li class="text-md font-semibold my-2">UIUX Design</li>
+            <li class="text-md font-semibold my-2">Product Design</li>
+            <li class="text-md font-semibold my-2">Back End Developer</li>
+            <li class="text-md font-semibold my-2">Front End Developer</li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-2xl font-bold">Resource</h1>
+          <ul class="mt-6">
+            <li class="text-md font-semibold my-2">FAQ</li>
+            <li class="text-md font-semibold my-2">Support</li>
+            <li class="text-md font-semibold my-2">Privacy Policy</li>
+            <li class="text-md font-semibold my-2">Terms of Service</li>
+          </ul>
+        </div>
+        <div class="col-span-2">
+          <h1 class="text-2xl font-bold">Subscribe to our newsletter</h1>
+          <div class="mt-6">
+            <p class="text-[#706F6F] mb-2">
+              There are many variations of passages of available, but the
+              majority have suffered
+            </p>
+            <input
+              class="px-4 py-3 bg-transparent border-2 outline-none rounded-lg w-[60%]"
+              type="email"
+              placeholder="Email address"
+            />
+            <button
+              class="btn btn-warning px-6 normal-case text-xl font-bold ml-2"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
