@@ -22,7 +22,7 @@ const displayMeals = (meals) => {
       "rounded-md"
     );
     card.innerHTML = `
-            <figure class="w-[120%]">
+            <figure class="w-[150%] lg:w-[120%]">
               <img
                 class="h-full rounded-md"
                 src="${meal.strMealThumb}"
@@ -33,7 +33,7 @@ const displayMeals = (meals) => {
               <h2 class="card-title text-[#403F3F] text-2xl font-bold">
                ${meal.strMeal}
               </h2>
-              <p class="text-[#706F6F]">
+              <p class="text-[#706F6F] text-sm lg:text-md">
                 ${meal.strInstructions.slice(0, 100) + "..."}
               </p>
               <div class="card-actions justify-start">
