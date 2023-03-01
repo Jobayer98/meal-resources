@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MealDB</title>
     <script defer src="./js/script.js"></script>
-    <script defer src="./js/googleTranslate.js"></script>
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -62,13 +61,14 @@
             class="w-[90%] lg:w-[650px] flex justify-center items-center text-gray-700"
           >
             <input
-              class="w-[80%] rounded px-6 py-3"
+              class="w-[80%] rounded px-6 py-3 outline-none"
               type="search"
               placeholder="Search any food"
               name=""
-              id=""
+              id="search_meal"
             />
             <button
+              onclick="searchMeal()"
               class="btn btn-warning px-6 font-bold ml-[-18px] normal-case"
             >
               Search
@@ -78,14 +78,18 @@
       </section>
 
       <!-- Cards section -->
-      <section class="mt-24 px-8 lg:px-24 py-24">
+      <section class="mt-4 mpx-8 lg:px-24 py-16">
         <h1 class="text-4xl font-bold text-center mb-12">Your Favorite Food</h1>
         <div
           id="card_container"
           class="grid md:grid-cols-2 lg:grid-cols-2 gap-8"
         ></div>
         <div class="flex justify-center items-center mt-16">
-          <button class="btn btn-warning px-6 normal-case text-xl font-bold">
+          <button
+            onclick="seeAllMeal()"
+            id="seeAll"
+            class="btn btn-warning px-6 normal-case text-xl font-bold"
+          >
             Show All
           </button>
         </div>

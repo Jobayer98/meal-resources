@@ -7,8 +7,10 @@ const loadData = (st) => {
 };
 
 const displayMeals = (meals) => {
-  console.log(meals);
+  document.getElementById("search_meal").value = "";
+
   const card_container = document.getElementById("card_container");
+  card_container.innerHTML = "";
   meals.forEach((meal) => {
     const card = document.createElement("div");
     card.classList.add(
@@ -45,6 +47,27 @@ const displayMeals = (meals) => {
     `;
     card_container.appendChild(card);
   });
+};
+
+const searchMeal = () => {
+  const searchKey = document.getElementById("search_meal");
+  const searchValue = searchKey.value;
+
+  loadData(searchValue);
+};
+
+const seeAllMeal = async () => {
+  document.getElementById("seeAll").style.display = "none";
+
+  const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchText}`;
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
+
+    displayMeals(data.meals);
+  } catch (e) {
+    console.log(e);
+  }
 };
 
 loadData();
